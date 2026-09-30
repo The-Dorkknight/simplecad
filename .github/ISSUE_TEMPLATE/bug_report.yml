@@ -1,0 +1,18 @@
+name: Bug report
+description: Something in SimpleCAD isn't working
+body:
+  - type: input
+    id: version
+    attributes: {label: SimpleCAD version, description: "See More tools → About SimpleCAD", placeholder: "0.9.3"}
+    validations: {required: true}
+  - type: input
+    id: freecad
+    attributes: {label: FreeCAD version and platform, placeholder: "FreeCAD 1.1.1, macOS 15 / Linux Mint 22"}
+    validations: {required: true}
+  - type: textarea
+    id: steps
+    attributes: {label: What did you do and what happened?}
+    validations: {required: true}
+  - type: textarea
+    id: log
+    attributes: {label: Report view / Python console output, description: "View → Panels → Report view", render: text}

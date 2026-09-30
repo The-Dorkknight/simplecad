@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>SimpleCAD</name>
+  <description>A decluttered, Fusion 360-style workbench: one big Sketch / Finish button, only the everyday Part Design and Sketcher tools, tabbed panels, a luminous high-contrast theme and Fusion-style trackpad navigation.</description>
+  <version>0.9.3</version>
+  <date>2026-09-30</date>
+  <maintainer email="The-Dorkknight@users.noreply.github.com">Matthew Armstrong</maintainer>
+  <license file="LICENSE.md">PolyForm-Noncommercial-1.0.0</license>
+  <url type="repository" branch="main">https://github.com/The-Dorkknight/simplecad</url>
+  <url type="bugtracker">https://github.com/The-Dorkknight/simplecad/issues</url>
+  <url type="readme">https://github.com/The-Dorkknight/simplecad/blob/main/README.md</url>
+  <icon>icons/SimpleCAD.svg</icon>
+  <tag>ui</tag>
+  <tag>fusion</tag>
+  <tag>partdesign</tag>
+  <tag>sketcher</tag>
+  <content>
+    <workbench>
+      <classname>SimpleCADWorkbench</classname>
+      <subdirectory>./</subdirectory>
+      <icon>icons/SimpleCAD.svg</icon>
+      <freecadmin>0.21.0</freecadmin>
+    </workbench>
+  </content>
+</package>

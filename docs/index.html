@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SimpleCAD</title>
+<meta name="description" content="SimpleCAD: a decluttered, Fusion 360-style workbench for FreeCAD. Source-available · Non-commercial.">
+<link rel="icon" href="images/favicon-64.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<style>
+:root{--bg:#f4f5f7;--fg:#1c1f24;--card:#fff;--mut:#5a616b;--acc:#c62828;--line:#d8dce2}
+@media(prefers-color-scheme:dark){:root{--bg:#14171b;--fg:#e8eaed;--card:#1e2328;--mut:#9aa3ad;--line:#2d343b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,sans-serif}
+main{max-width:980px;margin:0 auto;padding:0 16px 40px}
+.hero{text-align:center;padding:40px 0 16px}.hero img.ic{width:96px;height:96px}
+h1{margin:.2em 0}.tag{color:var(--mut)}
+img.shot{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);margin:16px 0}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:22px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.card h3{margin:.1em 0 .3em}
+code,pre{background:var(--card);border:1px solid var(--line);border-radius:6px}code{padding:1px 5px}pre{padding:10px;overflow:auto}
+footer{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;color:var(--mut);font-size:14px}a{color:var(--acc)}
+</style></head><body><main>
+<section class="hero">
+<img class="ic" src="images/icon-512.png" alt="">
+<h1>SimpleCAD</h1>
+<p class="tag">FreeCAD, decluttered, Fusion 360 style. Sketch &rarr; solid with one big button.</p>
+<a class="btn" id="repo" href="https://github.com/The-Dorkknight/simplecad">View on GitHub</a>
+<a class="btn" id="rel" href="https://github.com/The-Dorkknight/simplecad/releases">Releases</a>
+<img class="shot" src="images/deck.webp" alt="The SimpleCAD control deck">
+</section>
+<div class="grid">
+<div class="card"><h3>One big button</h3>Sketch, finish sketch and confirm a tool, all on one button (Ctrl+Enter).</div>
+<div class="card"><h3>Only what you use</h3>Everyday Part Design and Sketcher tools; everything else is one menu away.</div>
+<div class="card"><h3>See what's active</h3>Rainbow faces, a swirl on the selected face and an ACTIVE badge.</div>
+<div class="card"><h3>Trackpad navigation</h3>Two-finger pan, orbit around screen centre, pinch to zoom.</div>
+<div class="card"><h3>Luminous mode</h3>High-contrast view for long sessions.</div>
+<div class="card"><h3>Safe</h3>Hides toolbars, never your model; a restart restores everything.</div>
+</div>
+<h2>Install</h2>
+<ol><li>Close FreeCAD.</li><li>Copy the <code>simplecad</code> folder into FreeCAD's <code>Mod</code> folder and name it <code>SimpleCAD</code>.</li><li>Start FreeCAD and pick <b>SimpleCAD</b>.</li></ol>
+<p>Or use <b>Addon Manager &rarr; Preferences &rarr; Custom repositories</b> with the repository URL above. Full steps and troubleshooting are in the <a id="readme" href="https://github.com/The-Dorkknight/simplecad#readme">README</a>.</p>
+<img class="shot" src="images/swirl.webp" alt="Rainbow swirl on the selected face">
+<footer>Source-available &middot; Non-commercial. Licensed under the PolyForm Noncommercial License 1.0.0. Copyright Matthew Armstrong. No warranty, no liability; use at your own risk. Not affiliated with Autodesk or the FreeCAD project. Images are renders from a simulated test harness.</footer>
+</main>
+<script>
+(function(){var o="The-Dorkknight",r="simplecad",h=location.hostname,p=location.pathname.split("/").filter(Boolean);
+if(/\.github\.io$/.test(h)){o=h.split(".")[0];if(p[0])r=p[0];}
+var b="https://github.com/"+o+"/"+r;
+document.getElementById("repo").href=b;document.getElementById("rel").href=b+"/releases";document.getElementById("readme").href=b+"#readme";})();
+</script></body></html>
