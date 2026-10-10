@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.4 - 2026-10-10
+
+### Removed
+
+- `.pages.yml`
+- `PUBLISHING.md`
+
 ## 0.9.3 (2026-09-30)
 - First public release.
 - Big Sketch / Finish / OK button (Ctrl+Enter), pick a plane in the 3D view, snap to face, pulsing ENTER button.
